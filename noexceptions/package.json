@@ -5,6 +5,9 @@
   "main": "server/index",
   "repository": "https://github.com/okpalan/noexceptions",
   "author": "Nnamdi M Okpala",
+  "scripts": {
+    "gen:cert":"call ./bin/cert.bat"
+  },
   "license": "MIT",
   "private": true,
   "dependencies": {

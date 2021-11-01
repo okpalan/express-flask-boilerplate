@@ -13,9 +13,10 @@ const app = express();
 app.set("PORT", env.PORT);
 app.set("HOST", env.HOST);
 app.set("LOGGER", env.LOGGER);
-app.set("URL", `https://${app.get("HOST")}:${app.get("PORT")}` || env.URL);
-
-const whitelist = [app.get("URL")],
+app.set("DOMAIN")
+app.set("URL", `https://${app.get("HOST")}:${app.get("PORT")}`);
+app.set("DOMAIN_URL",``)
+const whitelist = [app.get("URL"),app.get("x")],
  corsOptions = {
   origin: function (origin, callback) {
     if (whitelist.indexOf(origin) !== -1 || !origin) {
