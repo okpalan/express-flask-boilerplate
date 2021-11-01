@@ -1,3 +1,5 @@
 ~require: [database.yaml, env.yaml]
 base:
   URL: https://noexpections.dev
+  DOMAIN_HOST: 0.0.0.0
+  DOMAIN_PORT: 3302

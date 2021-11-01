@@ -1,0 +1,21 @@
+{
+  "name": "public",
+  "homepage": "https://github.com/okpalan/noexceptions",
+  "authors": [
+    "okpalan <89138089+okpalan@users.noreply.github.com>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^3.6.0",
+    "socket.io": "^4.3.1"
+  }
+}

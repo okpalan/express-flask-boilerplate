@@ -13,19 +13,24 @@ const app = express();
 app.set("PORT", env.PORT);
 app.set("HOST", env.HOST);
 app.set("LOGGER", env.LOGGER);
-app.set("DOMAIN")
+app.set("DOMAIN_HOST", env.DOMAIN_HOST);
+app.set("DOMAIN_PORT", env.DOMAIN_PORT);
+
 app.set("URL", `https://${app.get("HOST")}:${app.get("PORT")}`);
-app.set("DOMAIN_URL",``)
-const whitelist = [app.get("URL"),app.get("x")],
- corsOptions = {
-  origin: function (origin, callback) {
-    if (whitelist.indexOf(origin) !== -1 || !origin) {
-      callback(null, true)
-    } else {
-      callback(new Error('Not allowed by CORS'))
-    }
-  }
-}
+app.set(
+  "DOMAIN_URL",
+  `https://${app.get("DOMAIN_HOST")}:${app.get("DOMAIN_PORT")}`
+);
+const whitelist = [app.get("URL"), app.get("x")],
+  corsOptions = {
+    origin: function (origin, callback) {
+      if (whitelist.indexOf(origin) !== -1 || !origin) {
+        callback(null, true);
+      } else {
+        callback(new Error("Not allowed by CORS"));
+      }
+    },
+  };
 //add middlewares
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
