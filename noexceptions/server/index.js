@@ -21,7 +21,7 @@ app.set(
   "DOMAIN_URL",
   `https://${app.get("DOMAIN_HOST")}:${app.get("DOMAIN_PORT")}`
 );
-const whitelist = [app.get("URL"), app.get("x")],
+const whitelist = [app.get("URL"), app.get("DOMAIN_URL")],
   corsOptions = {
     origin: function (origin, callback) {
       if (whitelist.indexOf(origin) !== -1 || !origin) {
