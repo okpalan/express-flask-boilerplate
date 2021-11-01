@@ -1,10 +1,10 @@
 {
-  "name": "noexceptions",
+  "name": "express-flask-boilerplate",
   "version": "0.1.0",
-  "description": "About",
+  "description": "",
   "main": "server/index",
-  "repository": "https://github.com/okpalan/noexceptions",
-  "author": "Nnamdi M Okpala",
+  "repository": "https://github.com/okpalan/express-flask-boilerplate",
+  "author": "",
   "scripts": {
     "gen:cert": "call ./bin/cert.bat",
     "postinstall": "cd public & bower install ",

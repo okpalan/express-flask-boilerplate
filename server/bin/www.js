@@ -25,12 +25,11 @@ io.on("connection", function (socket) {
   // Send a message after a timeout of 4seconds
   setTimeout(function () {
     socket.send("Sent a message 4seconds after connection!");
-  }, 4000);
-  socket.on("disconnect", function () {
-    console.log("A user disconnected");
-  });
+  }, 1000);
 });
 
 const server = https
   .createServer(options.https, app)
-  .listen(app.get("PORT"), () => console.log(`Head to: ${app.get("URL")}`));
+  .listen(app.get("DOMAIN_PORT"), () =>
+    console.log(`Head to: ${app.get("DOMAIN_URL")}`)
+  );

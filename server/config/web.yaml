@@ -1,0 +1,4 @@
+~require: [database.yaml, env.yaml]
+production:
+  ~compose : [base]
+ 
