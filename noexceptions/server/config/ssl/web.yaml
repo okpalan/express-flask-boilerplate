@@ -1,0 +1,3 @@
+~require: [database.yaml, env.yaml]
+base:
+  URL: https://noexpections.dev

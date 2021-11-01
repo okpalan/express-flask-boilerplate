@@ -1,0 +1,19 @@
+{
+  "name": "noexceptions",
+  "version": "0.1.0",
+  "description": "About",
+  "main": "server/index",
+  "repository": "https://github.com/okpalan/noexceptions",
+  "author": "Nnamdi M Okpala",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cookie-parser": "^1.4.5",
+    "cors": "^2.8.5",
+    "http-errors": "^1.8.0",
+    "request": "^2.88.2",
+    "socket.io": "^4.3.1",
+    "yenv": "^3.0.1"
+  }
+}

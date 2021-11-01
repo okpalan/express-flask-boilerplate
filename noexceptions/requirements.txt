@@ -1,0 +1,5 @@
+werkzeug
+flask
+markupsafe
+virtualenv
+python-dotenv
